@@ -97,20 +97,25 @@
                 <img class="foto-account" src="./image/Ellipse 4.png" width="" height="" alt="Ваше фото">
                 <div class="foto-file">
                     <h2 class="foto-file-text">Максимальный размер файла для фото или видео профиля - 15 МБ</h2>
-                    <span class="foto-file-download">Загрузить фото или видео</span>
+                    <form enctype="multipart/form-data" method="post" name="photo" multiple accept="image/*,video/*">
+                        <p>Загрузить фото или видео</p>
+                        <p><input type="file" name="f">
+                            <input type="submit" value="Отправить">
+                        </p>
+                    </form>
                 </div>
             </section>
             
             <!-- Personal information -->
             <section class="personal-info-section">
                 <div class="personal-name">
-                    <label for="user-name" class="persona-form-label">
+                    <label for="user-name" class="persona-form-label sirina">
                         Имя
                         <input type="text" name="user-name" id="user-name" placeholder="Введите имя" class="persona-form-input">
                     
                     </label>
                     
-                    <label for="user-surname" class="persona-form-label">
+                    <label for="user-surname" class="persona-form-label sirina">
                         Фамилия
                         <span class="">
                             <input type="text" name="user-surname" id="user-surname" placeholder="Введите фамилию"
@@ -157,61 +162,70 @@
             
             <!-- Contact information -->
             <h2 class="section-name">Контактные данные</h2>
-            <section>
+            <section class="contact-info-section">
             
-                <label for="user-name" class="modal-form-label">
+                <label for="user-name" class="persona-form-label">
                     Место расположения
-                    <span class="modal-form-input-icon">
-                        <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="">
+                        <input type="text" name="user-name" id="user-name" placeholder="Россия" class="persona-form-input">
                     </span>
             
                 </label>
             
-                <label for="user-name" class="modal-form-label">
+                <label for="user-name" class="persona-form-label">
             
-                    <span class="modal-form-input-icon">
-                        <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="">
+                        <input type="text" name="user-name" id="user-name" placeholder="Город проживания" class="persona-form-input">
                     </span>
             
                 </label>
             
-                <label for="user-name" class="modal-form-label">
+                <label for="user-name" class="persona-form-label">
                     Эл. адрес
-                    <span class="modal-form-input-icon">
-                        <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="">
+                        <input type="text" name="user-name" id="user-name" placeholder="Введите ваш Email" class="persona-form-input">
                     </span>
             
                 </label>
             
-                <label for="user-name" class="modal-form-label">
+                <label for="user-name" class="persona-form-label">
                     Номер телефона
-                    <span class="modal-form-input-icon">
-                        <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="">
+                        <input type="text" name="user-name" id="user-name" placeholder="38 (099) 568 432 3" class="persona-form-input">
                     </span>
             
                 </label>
             
-                <label for="user-name" class="modal-form-label">
+                <label for="user-name" class="persona-form-label">
                     Личный сайт
-                    <span class="modal-form-input-icon">
-                        <input type="text" name="user-name" id="user-name" class="modal-form-input">
+                    <span class="">
+                        <input type="text" name="user-name" id="user-name" placeholder="Введите URL" class="persona-form-input">
                     </span>
             
                 </label>
             
-                <div>
-                    <h4>Показать в профиле</h4>
-                    <p>Ваши контактные даные будут отображаться в Вашем профиле.</p>
+                <div class="contact-info-show-data">
+                   <div>
+                        <h4 class="contact-info-show-data-text">Показать в профиле</h4> <br>
+                        <p class="contact-info-show-data-warning-text">Ваши контактные даные будут отображаться в Вашем профиле.</p>
+                   </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </section>
             
             <!-- Delete account -->
             <h2 class="section-name">Безвозвратное удаление аккаунта</h2>
-            <section>
-                <h4>Аккаунт удаляется навсегда.</h4>
-                <p>После удаления аккаунта на --------- вы не сможете восстановить доступ к размещенным материалам и информации.
-                    Мессенджер и сообщения также будут удалены.</p>
-                <button>Удалить</button>
+            <section class="delete-account-section">
+                <h4 class="delete-account-title">Аккаунт удаляется навсегда.</h4>
+                <div class="delete-account-section-button">
+                    <p class="delete-account-info">После удаления аккаунта на --------- вы не сможете восстановить доступ к размещенным
+                        материалам и информации.
+                       <br> Мессенджер и сообщения также будут удалены.</p>
+                    <button class="delete-account-button">Удалить</button>
+                </div>
             </section>
         </main>
     </body>
