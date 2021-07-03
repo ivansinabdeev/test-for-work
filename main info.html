@@ -1,232 +1,245 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My account</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-            integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-            crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <main class="container">
-            <!-- Main menu -->
-            <section class="menu">
-                <ul class="accounts-list link">
-                    <li class="accounts-item">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="accounts-item">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="accounts-item">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="add-account">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="apps link">
-                    <li class="apps-item">
-                            <a href="" class="#">
-                                <svg class="">
-                                    <use href="#"></use>
-                                </svg>
-                            </a>
-                    </li>
-                    <li class="apps-item">
-                            <a href="" class="#">
-                                <svg class="">
-                                    <use href="#"></use>
-                                </svg>
-                            </a>
-                    </li>
-                    <li class="apps-item">
-                            <a href="" class="#">
-                                <svg class="">
-                                    <use href="#"></use>
-                                </svg>
-                            </a>
-                    </li>
-                </ul>
-                <ul class="settings link">    
-                    <li class="settings-item">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="settings-item">
-                        <a href="" class="#">
-                            <svg class="">
-                                <use href="#"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                
-            </section>
-            
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <main class="container flex-wrap">
+        <!-- Main menu -->
+        <section class="menu sidebar">
+            <ul class="accounts-list link">
+                <li class="accounts-item">
+                    <a href="" class="accounts-link link">
+                        <svg class="accounts-icon" width="40" height="40">
+                            <use href="./image/svg-sprite.svg#icon-accaunt"></use>
+                        </svg>
+                        <span class="accounts-name">Ольга</span>
+                    </a>
+                </li>
+                <li class="accounts-item">
+                    <a href="" class="accounts-link link">
+                        <svg class="accounts-icon" width="40" height="40">
+                            <use href="./image/svg-sprite.svg#icon-accaunt"></use>
+                        </svg>
+                        <span class="accounts-name">Ольга</span>
+                    </a>
+                </li>
+                <li class="accounts-item">
+                    <a href="" class="accounts-link link">
+                        <svg class="accounts-icon" width="40" height="40">
+                            <use href="./image/svg-sprite.svg#icon-accaunt"></use>
+                        </svg>
+                        <span class="accounts-name">Ольга</span>
+                    </a>
+                </li>
+                <li class="add-account">
+                    <a href="" class="add-account-link link">
+                        <svg class="add-account-icon-cross" width="14" height="15">
+                            <use href="./image/svg-sprite.svg#icon-cross" align="center"></use>
+                        </svg>
+
+                        <span class="add-account-text">Создать новый образ</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="apps link">
+                <li class="apps-item">
+                    <a href="" class="apps-link">
+                        <svg class="apps-icon-videocam" width="22" height="18">
+                            <use href="./image/svg-sprite.svg#icon-videocam-outline"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="apps-item">
+                    <a href="" class="apps-link">
+                        <svg class="apps-icon-appointments" width="15" height="15">
+                            <use href="./image/svg-sprite.svg#icon-appointments"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="apps-item">
+                    <a href="" class="apps-link">
+                        <svg class="apps-icon-area-chart" width="15" height="15">
+                            <use href="./image/svg-sprite.svg#icon-area-chart-alt"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="settings link">
+                <li class="settings-item">
+                    <a href="" class="settings-link">
+                        <svg class="apps-icon-info" width="15" height="15">
+                            <use href="./image/svg-sprite.svg#icon-info"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="settings-item">
+                    <a href="" class="settings-link">
+                        <svg class="settings-icon-gear" width="15" height="15">
+                            <use href="./image/svg-sprite.svg#icon-gear"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="content-wrap container">
             <h1 class="section-name">Личная информация</h1>
-            
+
             <!-- Foto -->
             <section class="foto-section">
-                <img class="foto-account" src="./image/Ellipse 4.png" width="" height="" alt="Ваше фото">
+                <img class="foto-account" src="./image/Ellipse 4.png" width="" height="" alt="Ваше фото" />
                 <div class="foto-file">
-                    <h2 class="foto-file-text">Максимальный размер файла для фото или видео профиля - 15 МБ</h2>
+                    <h2 class="foto-file-text">
+                        Максимальный размер файла для фото или видео профиля - 15 МБ
+                    </h2>
                     <form enctype="multipart/form-data" method="post" name="photo" multiple accept="image/*,video/*">
                         <p>Загрузить фото или видео</p>
-                        <p><input type="file" name="f">
-                            <input type="submit" value="Отправить">
+                        <p>
+                            <input type="file" name="f" />
+                            <input type="submit" value="Отправить" />
                         </p>
                     </form>
                 </div>
             </section>
-            
+
             <!-- Personal information -->
             <section class="personal-info-section">
                 <div class="personal-name">
                     <label for="user-name" class="persona-form-label wide">
                         Имя
-                        <input type="text" name="user-name" id="user-name" placeholder="Введите имя" class="persona-form-input">
-                    
+                        <input type="text" name="user-name" id="user-name" placeholder="Введите имя"
+                            class="persona-form-input" />
                     </label>
-                    
+
                     <label for="user-surname" class="persona-form-label wide">
                         Фамилия
                         <span class="">
                             <input type="text" name="user-surname" id="user-surname" placeholder="Введите фамилию"
-                                class="persona-form-input">
-                    
+                                class="persona-form-input" />
                         </span>
-                    
                     </label>
                 </div>
-            
+
                 <div class="personal-data">
                     <label for="user-name-account" class="persona-form-label">
                         Имя пользователя
                         <span class="">
-                            <input type="text" name="user-name-account" id="user-name-account" placeholder="Введите имя" class="persona-form-input">
-                    
+                            <input type="text" name="user-name-account" id="user-name-account" placeholder="Введите имя"
+                                class="persona-form-input" />
                         </span>
-                    
                     </label>
-                    
+
                     <label for="user-activity" class="persona-form-label">
                         Вид деятельности
                         <span class="">
-                            <input type="text" name="user-activity" id="user-activity" placeholder="Преподаватель" class="persona-form-input">
-                    
+                            <input type="text" name="user-activity" id="user-activity" placeholder="Преподаватель"
+                                class="persona-form-input" />
                         </span>
-                    
-                    </label>
-                </div>
-                    <label for="user-links" class="persona-form-label">
-                        Мои ссылки <br>
-                        <span class="persona-my-link">https://www.behance.net/</span>
-                        <span class="">
-                            <input type="text" name="user-links" id="user-links" placeholder="Введите ссылку" class="persona-form-input">
-                        </span>
-                    
                     </label>
 
+                    <label for="user-links" class="persona-form-label">
+                        Мои ссылки <br />
+                        <span class="persona-my-link">https://www.behance.net/</span>
+                        <span class="">
+                            <input type="text" name="user-links" id="user-links" placeholder="Введите ссылку"
+                                class="persona-form-input" />
+                        </span>
+                    </label>
+                </div>
+
                 <label for="user-myself" class="persona-form-label">О себе</label>
-                <textarea name="user-myself" id="user-myself" placeholder="Расскажите немного о себе" class="persona-myself"></textarea>
+                <textarea name="user-myself" id="user-myself" placeholder="Расскажите немного о себе"
+                    class="persona-myself"></textarea>
             </section>
-            
+
             <!-- Contact information -->
             <h2 class="section-name">Контактные данные</h2>
             <section class="contact-info-section">
-            
-                <div class="contact-data">
-                    <label for="user-name" class="persona-form-label contact-wide">
+                <div class="contact-adress">
+                    <label for="user-name" class="persona-form-label wide">
                         Место расположения
                         <span class="">
-                            <input type="text" name="user-name" id="user-name" placeholder="Россия" class="persona-form-input">
+                            <input type="text" name="user-name" id="user-name" placeholder="Россия" class="persona-form-input" />
                         </span>
-                    
                     </label>
                     
-                    <label for="user-name" class="persona-form-label contact-wide">
+                    <label for="user-name" class="persona-form-label wide">
                         Город
                         <span class="">
-                            <input type="text" name="user-name" id="user-name" placeholder="Город проживания" class="persona-form-input">
+                            <input type="text" name="user-name" id="user-name" placeholder="Город проживания" class="persona-form-input" />
                         </span>
-                    
-                    </label>
-                    
-                    <label for="user-name" class="persona-form-label contact-wide">
-                        Эл. адрес
-                        <span class="">
-                            <input type="text" name="user-name" id="user-name" placeholder="Введите ваш Email" class="persona-form-input">
-                        </span>
-                    
-                    </label>
-                    
-                    <label for="user-name" class="persona-form-label contact-wide">
-                        Номер телефона
-                        <span class="">
-                            <input type="text" name="user-name" id="user-name" placeholder="38 (099) 568 432 3" class="persona-form-input">
-                        </span>
-                    
                     </label>
                 </div>
-            
+
+                <div class="contact-data">
+                    <label for="user-name" class="persona-form-label wide">
+                        Эл. адрес
+                        <span class="">
+                            <input type="text" name="user-name" id="user-name" placeholder="Введите ваш Email" class="persona-form-input" />
+                        </span>
+                    </label>
+                    
+                    <label for="user-name" class="persona-form-label wide">
+                        Номер телефона
+                        <span class="">
+                            <input type="text" name="user-name" id="user-name" placeholder="38 (099) 568 432 3"
+                                class="persona-form-input" />
+                        </span>
+                    </label>
+                </div>
+
                 <label for="user-name" class="persona-form-label">
                     Личный сайт
                     <span class="">
-                        <input type="text" name="user-name" id="user-name" placeholder="Введите URL" class="persona-form-input">
+                        <input type="text" name="user-name" id="user-name" placeholder="Введите URL"
+                            class="persona-form-input" />
                     </span>
-            
                 </label>
-            
+
                 <div class="contact-info-show-data">
-                   <div>
-                        <h4 class="contact-info-show-data-text">Показать в профиле</h4> <br>
-                        <p class="contact-info-show-data-warning-text">Ваши контактные даные будут отображаться в Вашем профиле.</p>
-                   </div>
+                    <div>
+                        <h4 class="contact-info-show-data-text">Показать в профиле</h4>
+                        <br />
+                        <p class="contact-info-show-data-warning-text">
+                            Ваши контактные даные будут отображаться в Вашем профиле.
+                        </p>
+                    </div>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" />
                         <span class="slider round"></span>
                     </label>
                 </div>
             </section>
-            
+
             <!-- Delete account -->
             <h2 class="section-name">Безвозвратное удаление аккаунта</h2>
             <section class="delete-account-section">
                 <h4 class="delete-account-title">Аккаунт удаляется навсегда.</h4>
                 <div class="delete-account-section-button">
-                    <p class="delete-account-info">После удаления аккаунта на --------- вы не сможете восстановить доступ к размещенным
-                        материалам и информации.
-                       <br> Мессенджер и сообщения также будут удалены.</p>
+                    <p class="delete-account-info">
+                        После удаления аккаунта на --------- вы не сможете восстановить
+                        доступ к размещенным материалам и информации. <br />
+                        Мессенджер и сообщения также будут удалены.
+                    </p>
                     <button class="delete-account-button">Удалить</button>
                 </div>
             </section>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
+
 </html>

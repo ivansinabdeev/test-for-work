@@ -49,6 +49,113 @@ img {
   padding: 0 24px;
   margin: 0 auto;
 }
+
+/* ===sidebar=== */
+.flex-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 6.679%;
+  min-width: 72px;
+  min-height: 1502px;
+  height: 100vh;
+  padding-top: 86px;
+  background-color: var(--ouwer-text-color);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.accounts-list {
+  margin-bottom: 16px;
+}
+
+.accounts-item:not(:last-child) {
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.accounts-link {
+  display: block;
+}
+
+.accounts-icon {
+  fill: var(--background-main);
+}
+
+.accounts-name,
+.add-account-text {
+  display: block;
+  padding: 0 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 200%;
+  text-transform: uppercase;
+}
+
+.add-account {
+  height: 88px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.add-account-link {
+  position: relative;
+  display: block;
+
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-main);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.add-account-icon-cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-account-text {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.apps-item {
+  margin-bottom: 16px;
+}
+
+.apps-link,
+.settings-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-main);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.settings-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 /* Main menu */
 
 .section-name {
@@ -91,9 +198,9 @@ img {
 .personal-name {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .wide {
   width: 50%;
@@ -102,7 +209,6 @@ img {
 .wide:last-child {
   padding-right: 0px;
 }
-
 .persona-form-label {
   font-weight: 400;
   font-size: 14px;
@@ -127,8 +233,6 @@ img {
   font-size: 16px;
   line-height: 1.18;
   color: var(--ouwer-text-color);
-
-  /* padding-right: 24px; */
 }
 
 .personal-data {
@@ -174,33 +278,21 @@ img {
   display: block;
 }
 
+.contact-adress,
 .contact-data {
-  /* position: relative; */
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-}
-.contact-wide {
-  width: 25%;
-  padding-right: 24px;
-}
-.contact-wide:last-child {
-  padding-right: 0px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .contact-info-show-data {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 24px;
+  padding-top: 24px;
 }
-.contact-info-show-data::after {
-  content: "";
-  display: block;
-  margin-bottom: 10px;
-  height: 1px;
-  border-bottom: 1px solid var(--background-secondary);
-}
+
 .contact-info-show-data-text {
   font-weight: 500;
   font-size: 16px;
@@ -308,6 +400,13 @@ input:checked + .slider:before {
   color: var(--secondary-text-color);
 
   margin-top: 10px;
+}
+.delete-account-info::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--line-color);
+  bottom: 10px;
 }
 .delete-account-button {
   font-family: Roboto;
