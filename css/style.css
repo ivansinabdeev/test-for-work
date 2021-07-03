@@ -235,7 +235,7 @@ img {
   color: var(--ouwer-text-color);
 }
 
-.personal-data {
+.persona-data {
   display: block;
 }
 .persona-my-link {
@@ -388,11 +388,20 @@ input:checked + .slider:before {
   color: var(--secondary-text-color);
 }
 .delete-account-section-button {
+  /* position: absolute; */
   display: flex;
   margin-top: 10px;
   align-items: center;
   justify-content: space-between;
 }
+/* .delete-account-section-button::after {
+  /* position: relative; */
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--line-color);
+  /* margin-top: 10px; */
+} */
 .delete-account-info {
   font-weight: 300;
   font-size: 14px;
@@ -404,9 +413,10 @@ input:checked + .slider:before {
 .delete-account-info::after {
   content: "";
   display: block;
+  position: relative;
   height: 1px;
   background: var(--line-color);
-  bottom: 10px;
+  /* bottom: 10px; */
 }
 .delete-account-button {
   font-family: Roboto;
